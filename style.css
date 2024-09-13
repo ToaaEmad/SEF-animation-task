@@ -1,0 +1,236 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.left-path,
+.right-path{
+    position: relative;
+    left: 0px;
+    top: 10px;
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 1px solid black;
+    overflow: visible;
+    /*z-index: 4;*/
+    /*background-color: rgba(128, 128, 128, 0.3);*/
+}
+.Lhand{
+    width: 60px;
+    height: 27px;
+    margin-top: 41px;
+    background-color: black;
+    float: left;
+}
+.Rhand{
+    width: 60px;
+    height: 27px;
+    margin-top: 41px;
+    right: 0px;
+    background-color: black;
+    float: right;
+}
+.left-path img,
+.right-path img{
+    width: 60px;
+    height: 100px;
+    margin-left: 0;
+    float: left;
+}
+.right-path img{
+    float: right;
+}
+.blue-ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 120px;
+    overflow: visible;
+}
+.red-ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: firebrick;
+    position: absolute;
+    right: 120px;
+    overflow: visible;
+}
+.red-button{
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 10px;
+    margin-top: 25px;
+    background-color: firebrick;
+}
+.blue-button{
+    position: absolute;
+    left: 0;
+    height: 50px;
+    width: 10px;
+    margin-top: 25px;
+    background-color: cornflowerblue;
+}
+
+
+.l1{
+    animation-name: leftHand-ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+.first{
+    animation-name: blue-ani;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.b1{
+    animation-name: red-button;
+    animation-duration: 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+}
+.r1{
+    animation-name: rightHand-ani;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.second{
+    animation-name: red-ani;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.b2{
+    animation-name: blue-button;
+    animation-duration: 0.5s;
+    animation-delay: 3.75s;
+    animation-fill-mode: forwards;
+}
+.l2{
+    animation-name: leftHand-ani;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+.third{
+    animation-name: blue-ani;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.b3{
+    animation-name: red-button;
+    animation-duration: 0.5s;
+    animation-delay: 5.75s;
+    animation-fill-mode: forwards;
+}
+.r2{
+    animation-name: rightHand-ani;
+    animation-duration: 0.5s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+}
+.fourth{
+    animation-name: red-ani;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+.b4{
+    animation-name: blue-button;
+    animation-duration: 0.5s;
+    animation-delay: 7.75s;
+    animation-fill-mode: forwards;
+}
+.l3{
+    animation-name: leftHand-ani;
+    animation-duration: 0.5s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+}
+.fifth{
+    animation-name: blue-ani;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+.b5{
+    animation-name: red-button;
+    animation-duration: 0.5s;
+    animation-delay: 9.75s;
+    animation-fill-mode: forwards;
+}
+.r3{
+    animation-name: rightHand-ani;
+    animation-duration: 0.5s;
+    animation-delay: 10s;
+    animation-fill-mode: both;
+}
+.sixth{
+    animation-name: red-ani-last;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftHand-ani {
+    50%{
+        width: 100px;
+    }
+}
+@keyframes rightHand-ani {
+    50%{
+        width: 100px;
+    }
+}
+@keyframes blue-ani  {
+    0% {
+        left: 120px;
+        width: 100px;
+    }
+    87.5%{
+       left: 1259px;
+        width: 100px;
+    }
+    100%{
+        left: 1256px;
+        width: 100px;
+    }
+}
+@keyframes red-ani  {
+    0% {
+        right: 120px;
+        width: 100px;
+    }
+    87.5%{
+        right: 1259px;
+        width: 100px;
+    }
+    100%{
+        right: 1256px;
+        width: 100px;
+    }
+}
+@keyframes red-ani-last  {
+    0% {
+        right: 120px;
+        width: 100px;
+    }
+    100%{
+        right: 1266px;
+        width: 100px;
+    }
+}
+@keyframes red-button  {
+    50%{
+        width: 7px;
+    }
+}
+@keyframes blue-button  {
+    50%{
+        width: 7px;
+    }
+}
